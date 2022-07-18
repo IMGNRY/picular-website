@@ -1,0 +1,38 @@
+$white: #fffaf5;
+
+$grey1: #e6e1dd;
+$grey2: #c8c3be;
+$grey3: #9b9691;
+$grey4: #696464;
+$grey5: #505050;
+$grey6: #373737;
+
+$black: #191919;
+$black-special: #37373740;
+
+$green1: #73ff5f;
+$green2: #50d241;
+$green3: #3ca032;
+$green4: #286e23;
+
+$yellow1: #ffd25f;
+$yellow2: #ffb900;
+$yellow3: #cc9600;
+$yellow4: #997000;
+
+$red1: #ff7f78;
+$red2: #ff5046;
+$red3: #e13c37;
+$red4: #ad1d18;
+
+$blue1: #82cbff;
+$blue2: #4fb6ff;
+$blue3: #4297d4;
+$blue4: #3273a0;
+
+@mixin section-padding() {
+    padding: 64px 32px;
+    @media (min-width: 1000px) {
+        padding: 64px 64px;
+    }
+}
