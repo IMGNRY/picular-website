@@ -203,10 +203,7 @@ onMounted(() => {
                 <div class="text">
                     <h3>ALL PHOTOS GATHERED</h3>
                     <p>Picular will automate gathering photos from all your sources into one secure place.</p>
-                    <p>
-                        No more hassle to consolidate photos together with a partner from different phones to one shared
-                        account.
-                    </p>
+                    <p>No more hassle to consolidate photos together with a partner from different phones to one shared account.</p>
                 </div>
             </div>
             <div class="separator">
@@ -218,13 +215,10 @@ onMounted(() => {
                 </div>
                 <div class="text">
                     <h3>ORGANIZED & REFINED</h3>
+                    <p>Our AI sorts your people, removes duplicates, adds common tags, and puts all existing metadata in order.</p>
                     <p>
-                        Our AI sorts your people, removes duplicates, adds common tags, and puts all existing metadata
-                        in order.
-                    </p>
-                    <p>
-                        However, AI does not always make sense. That's why Picular will also help you reach perfection
-                        with manual functionalities.
+                        However, AI does not always make sense. That's why Picular will also help you reach perfection with manual
+                        functionalities.
                     </p>
                 </div>
             </div>
@@ -239,8 +233,7 @@ onMounted(() => {
                     <h3>INTO THE LIVINGROOM</h3>
                     <p>Never again the cumbersome process of finding the right photos and sending them for print.</p>
                     <p>
-                        Combine search filters and easily create photo books and other physical products of superior
-                        quality with a click.
+                        Combine search filters and easily create photo books and other physical products of superior quality with a click.
                     </p>
                 </div>
             </div>
@@ -253,8 +246,8 @@ onMounted(() => {
                 <div class="text">
                     <p>The road map of Picular is decided by you and everyone interested.</p>
                     <p>
-                        We believe this will guide us to build the most helpful features in the most suitable order
-                        while making the process more fun and inspiring.
+                        We believe this will guide us to build the most helpful features in the most suitable order while making the process
+                        more fun and inspiring.
                     </p>
                 </div>
                 <a href="/how-to-vote?goto=/feature-requests" class="vote-button">VOTE</a>
@@ -292,12 +285,11 @@ onMounted(() => {
                 <div class="text">
                     <p>
                         Picular is
-                        <strong>free to try</strong> for as long as you need. No credit card required. Pay when you are
-                        satisfied.
+                        <strong>free to try</strong> for as long as you need. No credit card required. Pay when you are satisfied.
                     </p>
                     <p>
-                        We plan to increase prices along with upcoming improvements. However, if you’re a brave and
-                        supportive early customer, you’ll keep your rate for as long as you stay subscribed.
+                        We plan to increase prices along with upcoming improvements. However, if you’re a brave and supportive early
+                        customer, you’ll keep your rate for as long as you stay subscribed.
                     </p>
                 </div>
             </div>
@@ -308,10 +300,7 @@ onMounted(() => {
             <h2 class="section-title">DOWNLOAD</h2>
             <h3 class="section-subtitle">OR UPVOTE</h3>
             <div class="buttons">
-                <a
-                    href="https://apps.apple.com/us/app/picular/id1454044901?itsct=apps_box_link&itscg=30200"
-                    class="button ready"
-                >
+                <a href="https://apps.apple.com/us/app/picular/id1454044901?itsct=apps_box_link&itscg=30200" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -383,7 +372,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">UPVOTE</div>
                 </a>
-                <a href="/how-to-vote?goto=/feature-requests/p/macos-client" class="button">
+                <a href="https://picular-desktop-releases.s3.amazonaws.com/Picular.pkg" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -397,7 +386,7 @@ onMounted(() => {
                         </svg>
                         <h4>Mac</h4>
                     </div>
-                    <div class="bottom">UPVOTE</div>
+                    <div class="bottom">DOWNLOAD</div>
                 </a>
                 <a href="/how-to-vote?goto=/feature-requests/p/linux-desktop-client" class="button">
                     <div class="top">
@@ -434,8 +423,8 @@ onMounted(() => {
             <div class="content-group">
                 <h2 class="section-title">ABOUT</h2>
                 <p>
-                    Picular is made by two lifelong friends. We are a self-funded company with a passion for digital
-                    glory, transparency, and doing good. We are from Stockholm, Sweden.
+                    Picular is made by two lifelong friends. We are a self-funded company with a passion for digital glory, transparency,
+                    and doing good. We are from Stockholm, Sweden.
                 </p>
             </div>
             <div class="co-founders-box">
@@ -464,11 +453,7 @@ onMounted(() => {
                                 loading="lazy"
                             />
                         </div>
-                        <img
-                            class="signature"
-                            src="./assets/svgs/signature_kristofer.svg"
-                            alt="Kristofer's signature"
-                        />
+                        <img class="signature" src="./assets/svgs/signature_kristofer.svg" alt="Kristofer's signature" />
                     </div>
                     <h5 class="work-title">DESIGN</h5>
                     <p>Kristofer Guldvarg</p>
@@ -487,26 +472,23 @@ onMounted(() => {
                 <div>
                     <h3>How long is the free trial?</h3>
                     <p>
-                        It can take time to get around and try all features and functions of a new product, so we have a
-                        soft limit based on usage. The idea is to make sure that you feel confident that Picular is
-                        worth your money. Then, after some time, we will remind you that you're on a free trial and push
-                        you towards a decision.
+                        It can take time to get around and try all features and functions of a new product, so we have a soft limit based on
+                        usage. The idea is to make sure that you feel confident that Picular is worth your money. Then, after some time, we
+                        will remind you that you're on a free trial and push you towards a decision.
                     </p>
                 </div>
                 <div>
                     <h3>Are images uploaded and stored on a server?</h3>
                     <p>
-                        Yes, Picular is a cloud-based service. We use AWS S3 for storage. This way you can access your
-                        photos from anywhere, we can take advantage of massive server power for processing and we can do
-                        backups.
+                        Yes, Picular is a cloud-based service. We use AWS S3 for storage. This way you can access your photos from anywhere,
+                        we can take advantage of massive server power for processing and we can do backups.
                     </p>
                 </div>
                 <div>
                     <h3>What is the storage limit?</h3>
                     <p>
-                        The storage limit is 1 TB. So, for example, if your average size per photo would be 2 MB, you
-                        could fit 500 000 photos. Whenever we get a customer exceeding the limit, we promise to find a
-                        fair solution to expand beyond.
+                        The storage limit is 1 TB. So, for example, if your average size per photo would be 2 MB, you could fit 500 000
+                        photos. Whenever we get a customer exceeding the limit, we promise to find a fair solution to expand beyond.
                     </p>
                 </div>
                 <div>
@@ -516,26 +498,25 @@ onMounted(() => {
                 <div>
                     <h3>Is there any quality degradation?</h3>
                     <p>
-                        We store all photos in original resolution without compression. If you edit a photo using
-                        Picular, we hold it as a copy so that you can always revert to your original. Keep in mind that
-                        if you edit a photo in any other tool before uploading, it will be considered the original.
-                        Also, if you're uploading 'live photos,' Picular will only store the selected frame.
+                        We store all photos in original resolution without compression. If you edit a photo using Picular, we hold it as a
+                        copy so that you can always revert to your original. Keep in mind that if you edit a photo in any other tool before
+                        uploading, it will be considered the original. Also, if you're uploading 'live photos,' Picular will only store the
+                        selected frame.
                     </p>
                 </div>
                 <div>
                     <h3>What about backups?</h3>
                     <p>
-                        We use AWS S3 for storage that implements redundancy with a 99.999999999% (11 9's) durability.
-                        However, our ambition is to improve this even further by backing up to another hosting provider
-                        to secure the system from human mistakes and if one system encounters a significant accident.
+                        We use AWS S3 for storage that implements redundancy with a 99.999999999% (11 9's) durability. However, our ambition
+                        is to improve this even further by backing up to another hosting provider to secure the system from human mistakes
+                        and if one system encounters a significant accident.
                     </p>
                 </div>
                 <div>
                     <h3>Do you support video?</h3>
                     <p>
-                        Not yet, but we will most likely add support to upload videos in the future. However, it will
-                        probably be a pure backup and view function without fancy sorting and editing capabilities since
-                        our focus is on photos.
+                        Not yet, but we will most likely add support to upload videos in the future. However, it will probably be a pure
+                        backup and view function without fancy sorting and editing capabilities since our focus is on photos.
                     </p>
                 </div>
             </div>
