@@ -95,6 +95,16 @@ function setupDriftTrigger() {
     intersectionObserver.observe(document.querySelector('#faq')!)
 }
 
+function downloadMacOSClient() {
+    if (window.location.href.includes('staging')) {
+        window.location.href = 'https://picular-desktop-releases.s3.amazonaws.com/Picular Staging.pkg'
+    } else if (window.location.href.includes('localhost')) {
+        alert('nope')
+    } else {
+        window.location.href = 'https://picular-desktop-releases.s3.amazonaws.com/Picular.pkg'
+    }
+}
+
 onMounted(() => {
     setupDriftTrigger()
 })
@@ -372,7 +382,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">UPVOTE</div>
                 </a>
-                <a href="https://picular-desktop-releases.s3.amazonaws.com/Picular.pkg" class="button ready">
+                <a @click.stop="downloadMacOSClient" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path

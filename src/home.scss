@@ -478,6 +478,7 @@ section#download {
             border-radius: 8px;
             text-decoration: none;
             transition: transform 0.6s ease-in-out;
+            cursor: pointer;
 
             .top {
                 background-color: $green3;
@@ -535,7 +536,7 @@ section#download {
             }
             &:hover {
                 transform: translateY(-10px);
-                transition: transform 0.3s ease-in-out;
+                transition: transform 0.2s ease-in-out;
             }
         }
     }
