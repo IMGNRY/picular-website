@@ -212,7 +212,7 @@ onMounted(() => {
                 </div>
                 <div class="text">
                     <h3>ALL PHOTOS GATHERED</h3>
-                    <p>Picular will automate gathering photos from all your sources into one secure place.</p>
+                    <p>Picular will help you gather photos from all your sources into one secure place.</p>
                     <p>No more hassle to consolidate photos together with a partner from different phones to one shared account.</p>
                 </div>
             </div>
