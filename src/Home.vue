@@ -105,6 +105,16 @@ function downloadMacOSClient() {
     }
 }
 
+function downloadWindowsClient() {
+    if (window.location.href.includes('staging')) {
+        window.location.href = 'https://www.dropbox.com/s/pfsyb936v86qj8z/picular_staging.msix?dl=0'
+    } else if (window.location.href.includes('localhost')) {
+        alert('nope')
+    } else {
+        window.location.href = 'ms-windows-store://pdp/?productid=9NJCJ5BKMKRR'
+    }
+}
+
 onMounted(() => {
     setupDriftTrigger()
 })
@@ -369,7 +379,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">UPVOTE</div>
                 </a>
-                <a href="/how-to-vote?goto=/feature-requests/p/windows-client-desktop" class="button">
+                <a @click.stop="downloadWindowsClient" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.8093 8H8V30.8093H30.8093V8Z" fill="#9B9691" />
@@ -380,7 +390,7 @@ onMounted(() => {
 
                         <h4>Windows</h4>
                     </div>
-                    <div class="bottom">UPVOTE</div>
+                    <div class="bottom">DOWNLOAD</div>
                 </a>
                 <a @click.stop="downloadMacOSClient" class="button ready">
                     <div class="top">
