@@ -26,6 +26,7 @@ if (window.innerWidth < 768) {
 const currentDevice = ref(devices[0])
 const currentVisionIndex = ref(1)
 const width = ref(0)
+const isStaging = ref(window.location.href.includes('staging'))
 
 function roundUpToNearest(number: number, nearest: number) {
     return Math.ceil(number / nearest) * nearest
@@ -379,7 +380,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">UPVOTE</div>
                 </a>
-                <a @click.stop="downloadWindowsClient" class="button ready">
+                <a v-if="isStaging" @click.stop="downloadWindowsClient" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.8093 8H8V30.8093H30.8093V8Z" fill="#9B9691" />
@@ -391,6 +392,19 @@ onMounted(() => {
                         <h4>Windows</h4>
                     </div>
                     <div class="bottom">DOWNLOAD</div>
+                </a>
+                <a v-else href="/how-to-vote?goto=/feature-requests/p/windows-client-desktop" class="button">
+                    <div class="top">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.8093 8H8V30.8093H30.8093V8Z" fill="#9B9691" />
+                            <path d="M56 8H33.1907V30.8093H56V8Z" fill="#9B9691" />
+                            <path d="M8 33.1907H30.8093V56H8V33.1907Z" fill="#9B9691" />
+                            <path d="M56 33.1907H33.1907V56H56V33.1907Z" fill="#9B9691" />
+                        </svg>
+
+                        <h4>Windows</h4>
+                    </div>
+                    <div class="bottom">UPVOTE</div>
                 </a>
                 <a @click.stop="downloadMacOSClient" class="button ready">
                     <div class="top">
