@@ -3,7 +3,7 @@
         <div class="content">
             <div>
                 <h1 class="mt72">Privacy Policy</h1>
-                <p class="b3 extra">Date of Last Revision: July 28, 2017</p>
+                <p class="b3 extra">Date of Last Revision: January 20, 2023</p>
                 <p class="b1 mt24" style="max-width: 600px">
                     Picular is founded on the principle of helping people organize, store and enjoy their photos and we take your privacy
                     very seriously. By installing and using Picular, you are accepting the practices outlined in this policy. The column on
