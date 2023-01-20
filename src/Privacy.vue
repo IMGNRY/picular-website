@@ -37,31 +37,22 @@
 <script setup lang="ts">
 const sections = [
     {
-        title: `INFORMATION COLLECTED BY Picular`,
-        long: `We only collect personal information that is relevant to the purpose of our app. This information allows us to provide you with a customized and efficient experience. We collect the following types of information from our Picular users: `,
-        short: `We collect information to make Picular useful for you and to provide a personalized experience.`,
-    },
-    {
         title: `INFORMATION YOU PROVIDE TO US`,
         long: `We receive and store any information you enter on in our app or provide to us in any other way. You can choose not to provide us with certain information, but then you may not be able to take advantage of all our features.
 
-Registration: In order for you to use Picular you must complete a registration form. As part of this registration form, we require your email or if you register with your Facebook account we will have access to certain information from that site, such as your name, account information and friends lists, in accordance with the authorization procedures determined by such social media site. We may receive updated information about you, such as an updated billing address, from the financial institution issuing your credit card in connection with our billing for the Services.
-
-User Profile: To allow you to express yourself beyond just the information collected during registration, we enable you to provide additional information, such as your first and last names, email address, social media account names, your birthday and gender. In addition, you may choose to include photos of yourself in your profile.`,
+Registration: In order for you to use Picular you must complete a registration form. As part of this registration form, we require your email. We may receive updated information about you, such as an updated billing address, from the financial institution issuing your credit card in connection with our billing for the Services.`,
         short: `We collect your registration and user profile data so that you can log in and use Picular.`,
     },
     {
         title: `Information We Collect Automatically`,
-        long: `We receive and store certain types of information whenever you interact with us. Picular and its authorized agents automatically receive and record certain "traffic data" on their server logs from your browser including your IP address. Picular uses this traffic data to help diagnose problems with its servers, analyze trends and administer the app.
+        long: `We receive and store certain types of information whenever you interact with us. Picular and its authorized agents automatically receive and record certain "traffic data" on their server logs including your IP address. Picular uses this traffic data to help diagnose problems with its servers, analyze trends and administer the app.
 
-Picular may collect and use information regarding the geographic location of your devices. If the location data contains your personal information, then Picular will treat this location data in accordance with this Policy.
-
-Picular may collect and, on any page, display the total counts that page has been viewed. This includes User Profile pages.`,
+Picular may collect and use information regarding the geographic location of your devices. If the location data contains your personal information, then Picular will treat this location data in accordance with this Policy.`,
         short: `Our servers collect log information, geographic location and user behaviours; this allows us to analyze, improve and personalize your experience.`,
     },
     {
         title: `E-MAIL COMMUNICATIONS`,
-        long: `Picular is very concerned about your privacy and we will never provide your email address to a third party without your explicit permission. Picular may send out e-mails with Picular-related news, products, offers, surveys or promotions. You may also receive notification e-mails from Picular, which inform you of actions (e.g. friend requests) that have been performed on the site. If you do not want to receive e-mail from us, please click the “unsubscribe”-link in the unwanted e-mail message. However, please note that in all cases you will continue to receive all system e-mails (e.g. those regarding forgotten user passwords) and legal notices (e.g. updates to our policies) from us.`,
+        long: `Picular is very concerned about your privacy and we will never provide your email address to a third party without your explicit permission. Picular may send out e-mails with Picular-related news, products, offers, surveys or promotions. You may also receive notification e-mails from Picular, which inform you of actions (e.g. download links) that have been performed on the site. If you do not want to receive e-mail from us, please click the “unsubscribe”-link in the unwanted e-mail message. However, please note that in all cases you will continue to receive all system e-mails (e.g. those regarding forgotten user passwords) and legal notices (e.g. updates to our policies) from us.`,
         short: `We will send you emails from time to time. You’ll have the option to unsubscribe except for system e-emails.`,
     },
     {
@@ -74,7 +65,7 @@ Protection of Picular and Others: We may release personal information when we be
 
 User Profile information: Information collected during registration and subsequent visits, such as your nick name and location, may be displayed to other Picular users if you choose to engage in our forums.
 
-Service Providers: Picular may share user information as well as information from tools such as cookies, log files, device identifiers and location data, with third-parties that help Picular provide services to you (“Service Providers”). Our Service Providers will be given access to your information as is reasonably necessary for Picular to provide our services. Picular requires Services Providers to protect your data in a manner consistent with this Policy and to limit the use of such information to the performance of services for Picular. Picular may also remove parts of data that can identify you and share anonymized data with Service Providers, including combining your information with other information in a way that it is no longer associated with you.</li>
+Service Providers: Picular may share user information as well as information from tools such as cookies, log files, device identifiers and location data, with third-parties that help Picular provide services to you (“Service Providers”). Our Service Providers will be given access to your information as is reasonably necessary for Picular to provide our services. Picular requires Services Providers to protect your data in a manner consistent with this Policy and to limit the use of such information to the performance of services for Picular. Picular may also remove parts of data that can identify you and share anonymized data with Service Providers, including combining your information with other information in a way that it is no longer associated with you.
 
 With Your Consent: Except as noted above, we will contact you when your personal information is shared with third parties or used for a purpose incompatible with the purpose(s) for which it was originally collected, and you will be able to opt out to prevent the sharing of this information.`,
         short: `We do not sell your information to anyone. However, we will show publicly available information to other users. We may share information so that we can provide our service, and we may share information where required by law. We may also share information with third-parties that help Picular provide services to you.`,
@@ -83,18 +74,18 @@ With Your Consent: Except as noted above, we will contact you when your personal
         title: `KEEPING INFORMATION SECURE`,
         long: `Your Picular account information is protected by a password for your privacy and security. Protect against unauthorized access to your password and to your computer by logging off once you have finished using a shared computer.
         
-        Only employees who need personal information to perform a specific job (for example, a customer service representative) are granted access to it. All of our employees are kept up to date on our privacy and security practices.</li></ol>`,
+        Only employees who need personal information to perform a specific job (for example, a customer service representative) are granted access to it. All of our employees are kept up to date on our privacy and security practices.`,
         short: `Your account is protected by an encrypted password. We keep it secure; you must also keep it safe. Our employees may not access your account unless required to do a specific job.`,
     },
     {
         title: `CHILDREN UNDER 18 YEARS OF AGE`,
-        long: `You must be 18 years and older or are authorized to access the Site by a parent or legal guardian to register to use Picular. If you have authorized a minor to use the Site, you are responsible for the online conduct of such minor, and the consequences of any misuse of the Site by the minor.
+        long: `You must be 18 years and older or are authorized to access the App by a parent or legal guardian to register to use Picular. If you have authorized a minor to use the App, you are responsible for the online conduct of such minor, and the consequences of any misuse of the App by the minor.
 `,
         short: `Ask for your parents' permission if you’re not 18 years of age or older.`,
     },
     {
         title: `CHANGES TO THIS PRIVACY POLICY`,
-        long: `Picular may amend this Privacy Policy from time to time, at its sole discretion. Use of information we collect now is subject to the Privacy Policy in effect at the time such information is used. If we make changes to the Privacy Policy, we will notify you by posting an announcement on the Picular website so you are always aware of what information we collect, how we use it, and under what circumstances if any, it is disclosed.`,
+        long: `Picular may amend this Privacy Policy from time to time, at its sole discretion. Use of information we collect now is subject to the Privacy Policy in effect at the time such information is used. If we make changes to the Privacy Policy, we will notify you by posting an announcement in the App so you are always aware of what information we collect, how we use it, and under what circumstances if any, it is disclosed.`,
         short: `The Privacy Policy may change.`,
     },
     {
