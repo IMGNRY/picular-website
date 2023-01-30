@@ -3,11 +3,15 @@ import { ref, computed } from 'vue'
 import Home from './Home.vue'
 import HowToVote from './HowToVote.vue'
 import Privacy from './Privacy.vue'
+import TermsOfUse from './TermsOfUse.vue'
+import ReleaseNotes from './ReleaseNotes.vue'
 
 const routes: { [prop: string]: any } = {
     '/': Home,
     '/how-to-vote': HowToVote,
     '/legal/privacy': Privacy,
+    '/legal/terms': TermsOfUse,
+    '/release-notes': ReleaseNotes,
 }
 
 const currentPath = ref(window.location.pathname)

@@ -556,10 +556,10 @@ onMounted(() => {
                     <a href="https://picular.canny.io/feature-requests">Feature requests</a>
                 </li>
                 <li>
-                    <a href="https://app.picular.com/release-notes">Release notes</a>
+                    <a href="/release-notes">Release notes</a>
                 </li>
                 <li>
-                    <a href="https://app.picular.com/legal/terms">Terms of use</a>
+                    <a href="/legal/terms">Terms of use</a>
                 </li>
                 <li>
                     <a href="/legal/privacy">Privacy policy</a>

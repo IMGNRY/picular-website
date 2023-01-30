@@ -86,3 +86,476 @@ $desktop-width: 1200px;
     bottom: 0;
     left: 0;
 }
+
+
+@include tablet {
+    .legal .content {
+        > div {
+            max-width: 1200px;
+            margin: 60px;
+        }
+    }
+    .pair {
+        display: flex;
+        .short {
+            margin-left: 60px;
+            margin-top: 0;
+        }
+    }
+}
+
+h1,
+.h1 {
+    font-size: 3.6rem;
+}
+
+h2,
+.h2 {
+    font-size: 3.6rem;
+}
+
+.h2x {
+    font-size: 2.6rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.4rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.2rem;
+}
+
+.b1,
+.b2x,
+.b2,
+.b3,
+.b4,
+.b5 {
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.b1 {
+    font-size: 1.8rem;
+}
+
+.b2x {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.b2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.b3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.b4 {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.extra {
+    color: $grey3;
+    font-style: italic;
+}
+
+.quote {
+    line-height: 1.4;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+.w300 {
+    font-weight: 300;
+}
+.w500 {
+    font-weight: 500;
+}
+.w900 {
+    font-weight: 900;
+}
+
+.preamble {
+    font-size: 1.8rem;
+}
+
+.white {
+    color: $white;
+}
+
+.grey1 {
+    color: $grey1;
+}
+
+.grey2 {
+    color: $grey2;
+}
+
+.grey3 {
+    color: $grey3;
+}
+
+.grey4 {
+    color: $grey4;
+}
+
+.grey5 {
+    color: $grey5;
+}
+
+.grey6 {
+    color: $grey6;
+}
+
+.black {
+    color: $black;
+}
+
+.green1 {
+    color: $green1;
+}
+
+.green2 {
+    color: $green2;
+}
+
+.green3 {
+    color: $green3;
+}
+
+.green4 {
+    color: $green4;
+}
+
+.yellow1 {
+    color: $yellow1;
+}
+
+.yellow2 {
+    color: $yellow2;
+}
+
+.yellow3 {
+    color: $yellow3;
+}
+
+.yellow4 {
+    color: $yellow4;
+}
+
+.red1 {
+    color: $red1;
+}
+
+.red2 {
+    color: $red2;
+}
+
+.red3 {
+    color: $red3;
+}
+
+.red4 {
+    color: $red4;
+}
+
+.blue1 {
+    color: $blue1;
+}
+
+.blue2 {
+    color: $blue2;
+}
+
+.blue3 {
+    color: $blue3;
+}
+
+.blue4 {
+    color: $blue4;
+}
+
+.mt6 {
+    margin-top: 6px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt12 {
+    margin-top: 12px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt36 {
+    margin-top: 36px;
+}
+
+.mt48 {
+    margin-top: 48px;
+}
+
+.mt72 {
+    margin-top: 72px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.unset-text-transform,
+.no-text-transform {
+    text-transform: unset;
+}
+
+.gap16 > * + * {
+    margin-left: 16px;
+}
+.gap24 > * + * {
+    margin-left: 24px;
+}
+.gap32 > * + * {
+    margin-left: 32px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+// medium width
+@include tablet {
+    h1,
+    .h1 {
+        font-size: 4.8rem;
+    }
+    .preamble {
+        font-size: 2rem;
+    }
+}
+
+// large width
+@include desktop {
+    h1,
+    .h1 {
+        font-size: 6.4rem;
+    }
+    h2,
+    .h2 {
+        font-size: 3.6rem;
+    }
+    .b1 {
+        font-size: 1.8rem;
+    }
+    .quote {
+        font-size: 2rem;
+    }
+    .preamble {
+        font-size: 2.4rem;
+    }
+}
+
+.link {
+    cursor: pointer;
+    @extend .b2;
+    text-decoration: underline;
+    // text-decoration-skip-ink: none;
+    color: $grey3;
+    font-style: italic;
+    transition-property: color;
+    @include transition-duration-leave();
+    svg path {
+        transition-property: fill;
+        @include transition-duration-leave();
+        fill: $grey3;
+    }
+    &:hover {
+        @include transition-duration-enter();
+        color: $white;
+        svg path {
+            @include transition-duration-enter();
+            fill: $white;
+        }
+    }
+    user-select: none;
+}
+
+// global progress indicator on cursor, used to make user understand that stuff is going on and should have wait
+.loading,
+.loading * {
+    cursor: progress !important;
+}
+
+// extracted from animate.css (only using shake for now)
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    animation-name: shake;
+}
+
+// general transition effect when using <transition>
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.2s;
+    opacity: 1;
+}
+
+.v-enter,
+.v-leave-to {
+    opacity: 0;
+}
+
+// dropdown meu transition effect when using <transition>
+.dropdownmenu-enter-active,
+.dropdownmenu-leave-active {
+    transition: opacity 150ms linear, transform 100ms linear;
+    opacity: 1;
+}
+
+.dropdownmenu-enter,
+.dropdownmenu-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+.dropupmenu-enter-active,
+.dropupmenu-leave-active {
+    transition: opacity 150ms linear, transform 100ms linear;
+    opacity: 1;
+}
+
+.dropupmenu-enter,
+.dropupmenu-leave-to {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+// fast-fade
+.fast-fade-enter,
+.fast-fade-leave-to {
+    opacity: 0;
+}
+.fast-fade-enter-active {
+    transition: opacity 0.2s ease-out;
+}
+.fast-fade-leave-active {
+    transition: opacity 0.25s ease-in;
+}
+
+// medium-fade
+.medium-fade-enter,
+.medium-fade-leave-to {
+    opacity: 0;
+}
+.medium-fade-enter-active {
+    transition: opacity 0.5s ease;
+}
+.medium-fade-leave-active {
+    transition: opacity 0.6s ease;
+}
+
+// slow-fade
+.slow-fade-enter,
+.slow-fade-leave-to {
+    opacity: 0;
+}
+.slow-fade-enter-active {
+    transition: opacity 0.7s ease;
+}
+.slow-fade-leave-active {
+    transition: opacity 0.8s ease;
+}
+
+// debug-slow-fade
+.debug-slow-fade-enter-active {
+    transition: opacity 3s ease;
+    opacity: 1;
+}
+.debug-slow-fade-leave-active {
+    transition: opacity 3s ease;
+    opacity: 1;
+}
+.debug-slow-fade-enter,
+.debug-slow-fade-leave-to {
+    transition: opacity 3s ease;
+    opacity: 0;
+}
+
+// scale-fade
+.scale-fade-enter-active,
+.scale-fade-leave-active {
+    transition: opacity 200ms linear, transform 300ms ease-out;
+    opacity: 1;
+}
+
+.scale-fade-enter,
+.scale-fade-leave-to {
+    opacity: 0;
+    transform: scale(0.95);
+}
