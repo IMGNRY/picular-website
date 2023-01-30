@@ -562,7 +562,7 @@ onMounted(() => {
                     <a href="https://app.picular.com/legal/terms">Terms of use</a>
                 </li>
                 <li>
-                    <a href="https://app.picular.com/legal/privacy">Privacy policy</a>
+                    <a href="/legal/privacy">Privacy policy</a>
                 </li>
             </ul>
             <ul class="social-links">
