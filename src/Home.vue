@@ -108,7 +108,7 @@ function downloadMacOSClient() {
 
 function downloadWindowsClient() {
     if (window.location.href.includes('staging')) {
-        window.location.href = 'https://www.dropbox.com/s/pfsyb936v86qj8z/picular_staging.msix?dl=0'
+        window.location.href = 'https://www.dropbox.com/preview/IMGNRY/Projects/Picular/Builds/picular_staging.msix'
     } else if (window.location.href.includes('localhost')) {
         alert('nope')
     } else {
