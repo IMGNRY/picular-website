@@ -108,11 +108,11 @@ function downloadMacOSClient() {
 
 function downloadWindowsClient() {
     if (window.location.href.includes('staging')) {
-        window.location.href = 'https://www.dropbox.com/preview/IMGNRY/Projects/Picular/Builds/picular_staging.msix'
+        return 'https://www.dropbox.com/preview/IMGNRY/Projects/Picular/Builds/picular_staging.msix'
     } else if (window.location.href.includes('localhost')) {
-        alert('nope')
+        return 'Nope!'
     } else {
-        window.location.href = 'ms-windows-store://pdp/?productid=9NJCJ5BKMKRR'
+        return 'https://apps.microsoft.com/store/detail/picular/9NJCJ5BKMKRR'
     }
 }
 
@@ -380,7 +380,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">UPVOTE</div>
                 </a>
-                <a @click.stop="downloadWindowsClient" class="button ready">
+                <a :href="downloadWindowsClient()" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.8093 8H8V30.8093H30.8093V8Z" fill="#9B9691" />
