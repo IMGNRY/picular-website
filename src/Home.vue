@@ -96,23 +96,33 @@ function setupDriftTrigger() {
     intersectionObserver.observe(document.querySelector('#faq')!)
 }
 
-function downloadMacOSClient() {
+function downloadLink_Mac() {
     if (window.location.href.includes('staging')) {
-        window.location.href = 'https://picular-desktop-releases.s3.amazonaws.com/Picular Staging.pkg'
+        return 'https://picular-desktop-releases.s3.amazonaws.com/Picular Staging.pkg'
     } else if (window.location.href.includes('localhost')) {
-        alert('nope')
+        return 'Nope!'
     } else {
-        window.location.href = 'https://picular-desktop-releases.s3.amazonaws.com/Picular.pkg'
+        return 'https://picular-desktop-releases.s3.amazonaws.com/Picular.pkg'
     }
 }
 
-function downloadWindowsClient() {
+function downloadLink_Windows() {
     if (window.location.href.includes('staging')) {
         return 'https://www.dropbox.com/preview/IMGNRY/Projects/Picular/Builds/picular_staging.msix'
     } else if (window.location.href.includes('localhost')) {
         return 'Nope!'
     } else {
         return 'https://apps.microsoft.com/store/detail/picular/9NJCJ5BKMKRR'
+    }
+}
+
+function downloadLink_Android() {
+    if (window.location.href.includes('staging')) {
+        return 'https://play.google.com/store/apps/details?id=com.imgnry.picular.staging'
+    } else if (window.location.href.includes('localhost')) {
+        return 'Nope!'
+    } else {
+        return 'https://play.google.com/store/apps/details?id=com.imgnry.picular'
     }
 }
 
@@ -337,7 +347,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">DOWNLOAD</div>
                 </a>
-                <a href="/how-to-vote?goto=/feature-requests/p/android-mobile-app" class="button">
+                <a :href="downloadLink_Android()" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -362,7 +372,7 @@ onMounted(() => {
 
                         <h4>Android</h4>
                     </div>
-                    <div class="bottom">UPVOTE</div>
+                    <div class="bottom">DOWNLOAD</div>
                 </a>
                 <a href="/how-to-vote?goto=/feature-requests/p/ipad-support" class="button">
                     <div class="top">
@@ -380,7 +390,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">UPVOTE</div>
                 </a>
-                <a :href="downloadWindowsClient()" class="button ready">
+                <a :href="downloadLink_Windows()" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.8093 8H8V30.8093H30.8093V8Z" fill="#9B9691" />
@@ -393,7 +403,7 @@ onMounted(() => {
                     </div>
                     <div class="bottom">DOWNLOAD</div>
                 </a>
-                <a @click.stop="downloadMacOSClient" class="button ready">
+                <a :href="downloadLink_Mac()" class="button ready">
                     <div class="top">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
