@@ -110,9 +110,11 @@ function downloadLink_Windows() {
     if (window.location.href.includes('staging')) {
         return 'https://www.dropbox.com/preview/IMGNRY/Projects/Picular/Builds/picular_staging.msix'
     } else if (window.location.href.includes('localhost')) {
-        return 'Nope!'
+        return 'ms-windows-store://pdp/?productid=9NJCJ5BKMKRR'
+        // return 'Nope!'
     } else {
-        return 'https://apps.microsoft.com/store/detail/picular/9NJCJ5BKMKRR'
+        return 'ms-windows-store://pdp/?productid=9NJCJ5BKMKRR'
+        // return 'https://apps.microsoft.com/store/detail/picular/9NJCJ5BKMKRR'
     }
 }
 
