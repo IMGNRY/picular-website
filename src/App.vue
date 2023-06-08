@@ -5,6 +5,7 @@ import HowToVote from './HowToVote.vue'
 import Privacy from './Privacy.vue'
 import TermsOfUse from './TermsOfUse.vue'
 import ReleaseNotes from './ReleaseNotes.vue'
+import Subscription from './Subscription.vue'
 
 const routes: { [prop: string]: any } = {
     '/': Home,
@@ -12,6 +13,7 @@ const routes: { [prop: string]: any } = {
     '/legal/privacy': Privacy,
     '/legal/terms': TermsOfUse,
     '/release-notes': ReleaseNotes,
+    '/subscription': Subscription,
 }
 
 const currentPath = ref(window.location.pathname)
