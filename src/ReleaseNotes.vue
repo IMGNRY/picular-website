@@ -32,11 +32,11 @@
 </template>
 
 <script setup lang="ts">
-import axios from 'axios'
 import { onMounted, ref } from 'vue'
 import { stage } from './utils'
 import Separator from './Separator.vue'
 import Checkmark from './Checkmark.vue'
+import { api } from './api'
 
 const notes = ref<any>([])
 
@@ -47,14 +47,7 @@ const rotateStyle = (index: number) => {
 }
 
 onMounted(async () => {
-    let baseUrl = 'http://localhost:3001'
-    if (stage() === 'production') {
-        baseUrl = 'https://api.picular.com'
-    }
-    if (stage() === 'staging') {
-        baseUrl = 'https://api-staging.picular.com'
-    }
-    const { data } = await axios.get(`${baseUrl}/api/release-notes`)
+    const { data } = await api.get('/release-notes')
     notes.value = data
 })
 </script>

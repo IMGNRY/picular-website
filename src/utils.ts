@@ -1,8 +1,5 @@
 export function stage() {
-    if (window.location.hostname.includes('localhost')) {
-        return 'development'
-    }
-    if (window.location.hostname.includes('127.0.0.1')) {
+    if (!window.location.hostname.includes('picular.com')) {
         return 'development'
     }
     if (window.location.hostname.includes('staging')) {
