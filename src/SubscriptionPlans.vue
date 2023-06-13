@@ -7,17 +7,17 @@
         </div>
         <div class="plan-boxes">
             <div class="plan-box">
-                <p class="price"><span class="dollar-sign">$</span>4</p>
+                <p class="price"><span class="dollar-sign">$</span>3.75</p>
                 <p class="name">Monthly</p>
-                <p class="aimed-price-label">Aimed price</p>
-                <p class="aimed-price">$10</p>
+                <!-- <p class="aimed-price-label">&nbsp;</p> -->
+                <p class="aimed-price">&nbsp;</p>
                 <button @click="subscribeMonthly">SUBSCRIBE</button>
             </div>
             <div class="plan-box">
-                <p class="price"><span class="dollar-sign">$</span>40</p>
+                <p class="price"><span class="dollar-sign">$</span>36</p>
                 <p class="name">Yearly</p>
-                <p class="aimed-price-label">Aimed price</p>
-                <p class="aimed-price">$100</p>
+                <!-- <p class="aimed-price-label">Save</p> -->
+                <p class="aimed-price">Save 16%</p>
                 <button @click="subscribeYearly">SUBSCRIBE</button>
             </div>
         </div>
@@ -109,7 +109,7 @@ h2 {
     .price {
         font-size: 48px;
         font-weight: 900;
-        margin: 40px 0 16px 0;
+        margin: 40px 0 10px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -123,7 +123,7 @@ h2 {
 
     .name {
         font-size: 18px;
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -146,7 +146,7 @@ h2 {
         align-items: center;
         justify-content: center;
         color: $grey3;
-        text-decoration: line-through;
+        // text-decoration: line-through;
     }
 }
 
